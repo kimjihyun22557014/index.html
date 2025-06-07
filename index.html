@@ -179,6 +179,93 @@
   border-radius: 6px;
   transition: background-color 0.3s ease;
 }
+
+    footer {
+      width: 100%;
+      background-color: #222;
+      color: white;
+      padding: 30px 20px 20px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+      box-sizing: border-box;
+      margin-top: 60px;
+    }
+
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .footer-left, .footer-right {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-logo img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .footer-section h4 {
+      margin: 0 0 5px;
+      font-size: 16px;
+    }
+
+    .footer-section address {
+      font-style: normal;
+      line-height: 1.6;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .footer-section address span {
+      display: block;
+    }
+
+    .footer-button {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #fff;
+      color: #000;
+      text-decoration: none;
+      padding: 8px 12px;
+      font-size: 14px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+      width: fit-content;
+    }
+
+    .footer-button:hover {
+      background-color: #ddd;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 20px;
+    }
+
+@media (max-width: 700px) {
+      .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer-left, .footer-right {
+        align-items: center;
+      }
+
+      .footer-logo img {
+        margin: 0 auto 10px;
+      }
+
+      .footer-button {
+        margin: 10px auto 0;
+      }
+    }
  </style>
 </head>
   <body>
@@ -237,5 +324,39 @@
     </div>
     </div>
     <a href="https://inugim58.github.io/gamja/" class="main-button">🏠MAIN PAGE</a>
+
+     <footer>
+    <div class="footer">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="https://your-logo-url.com/logo.png" alt="MC" />
+        </div>
+        <div class="footer-section">
+          <h4>마리끌레르</h4>
+          <address>
+            서울특별시 강남구 봉은사로 226<br>
+            <span>대표번호: 02.3458.7300</span>
+            <span>팩스번호: 02.3458.7119</span>
+            <span>정기구독문의: 02.3458.7122</span>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-section">
+          <h4>사업자 정보</h4>
+          <address>
+            <span>사업자등록번호: 211-86-54814</span>
+            <span>통신판매업신고제: 2007-3210121-30-2-10512호</span>
+          </address>
+        </div>
+        <a href="https://www.marieclairekorea.com/tag/%EB%A9%94%EC%A2%85/" class="footer-button">메종 마리끌레르 온라인 바로가기 →</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      Copyright © 2015 MCK Publishing Co. Ltd. All Rights Reserved.
+    </div>
+  </footer>
 </body>
 </html>

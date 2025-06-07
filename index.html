@@ -266,6 +266,32 @@
         margin: 10px auto 0;
       }
     }
+    .hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-poem {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  background-color: rgba(200, 255, 200, 0.9); /* 연두 반투명 */
+  color: #2e4a2e;
+  font-size: 14px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 1.6;
+  font-style: italic;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.hover-container:hover .hover-poem {
+  display: block;
+}
  </style>
 </head>
   <body>
@@ -292,9 +318,16 @@
     <div class="second-page">
     <div class="second-row">
     <div class="second-block image-bottom">
-      <img src="1.png" alt="첫번째">
+    <div class="hover-container">
+    <img src="1.png" alt="첫번째">
+    <div class="hover-poem">
+       “그대가 있어 내가 있고<br>내가 있어 또 다른 그대가 있다.”<br><br>– 나태주, 「사랑한다는 것은」
+    </div>
+    </div>  
         <h3>Green Glow - 여름밤을 물들이는 테이블</h3>
         <p>초록빛 도어와 식물, 그리고 풍성한 샹들리에 아래 놓인 긴 테이블은 여름의 한가운데에서 펼쳐지는 느긋한 저녁 파티를 떠올리게 한다. 스트라이프 테이블보와 유리잔, 소박한 디저트들이 어우러지며 포멀함과 자연스러움이 균형을 이루는 초록 무드의 식사 공간.여기에 캔들 라이트와 은은한 배경 음악이 더해진다면, 마치 휴양지에 온 듯한 기분 좋은 이완감을 선사한다. 테이블 위에 놓인 작은 화병 속 싱그러운 초록 식물들은 공간에 생기를 불어넣고, 손님들과 나누는 대화는 자연스럽게 흘러간다. 이처럼 디테일한 감성과 자연 소재의 조화가 어우러진 다이닝 공간은 단순한 식사가 아닌, 기억에 남는 특별한 경험을 만들어낸다.</p>
+    </div>
+    </div>
     </div>
 
       <div class="second-block image-top">

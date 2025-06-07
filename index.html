@@ -266,6 +266,36 @@
         margin: 10px auto 0;
       }
     }
+
+    .poem-hover-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.poem-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(150, 255, 150, 0.7); /* 연두색 반투명 */
+  color: #1e3d2f;
+  font-size: 18px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+.poem-hover-container:hover .poem-overlay {
+  opacity: 1;
+}
  </style>
 </head>
   <body>
@@ -291,7 +321,10 @@
     
     <div class="second-page">
     <div class="second-row">
-    <div class="second-block image-bottom">
+    <div class="second-block image-bottom poem-hover-container">
+    <div class="poem-overlay">
+    초록 물결 따라<br>바람이 쉬어가네<br>조용한 식탁 위에<br>여름이 머문다
+    </div>
       <img src="1.png" alt="첫번째">
         <h3>Green Glow - 여름밤을 물들이는 테이블</h3>
         <p>초록빛 도어와 식물, 그리고 풍성한 샹들리에 아래 놓인 긴 테이블은 여름의 한가운데에서 펼쳐지는 느긋한 저녁 파티를 떠올리게 한다. 스트라이프 테이블보와 유리잔, 소박한 디저트들이 어우러지며 포멀함과 자연스러움이 균형을 이루는 초록 무드의 식사 공간.여기에 캔들 라이트와 은은한 배경 음악이 더해진다면, 마치 휴양지에 온 듯한 기분 좋은 이완감을 선사한다. 테이블 위에 놓인 작은 화병 속 싱그러운 초록 식물들은 공간에 생기를 불어넣고, 손님들과 나누는 대화는 자연스럽게 흘러간다. 이처럼 디테일한 감성과 자연 소재의 조화가 어우러진 다이닝 공간은 단순한 식사가 아닌, 기억에 남는 특별한 경험을 만들어낸다.</p>
@@ -315,7 +348,11 @@
         <h3>Green Vibe - 감각적인 무드의 완성</h3>
         <p>열대 식물을 연상시키는 패턴 쿠션은 공간에 활력을 더해주는 포인트 역할을 한다. 선명한 그린 컬러와 대조적인 블랙 테두리가 시선을 사로잡으며, 자연스러운 듯 강렬한 인상을 남긴다. 함께 매치된 투명한 연두빛 턴테이블은 기능적인 오브제를 넘어, 공간의 분위기를 한층 감각적으로 끌어올리는 장식 요소로 작용한다. 가벼운 음악이 흐를 것 같은 이 조합은, 실내에서도 한여름의 리듬감을 놓치지 않는 라이프스타일을 제안한다.</p>
       </div>
-      <div class="second-block image-top">
+      
+      <div class="second-block image-top poem-hover-container">
+      <div class="poem-overlay">
+      유리창 너머 햇살<br>식물의 향기<br>하루의 시작이<br>조용히 빛난다
+      </div>
         <div class="right-divider"></div>
         <h3>Green Retreat - 햇살 가득한 브런치 공간</h3>
         <p>넓은 창과 유리천장을 통해 쏟아지는 자연광, 그리고 싱그러운 식물과 그린 컬러 벽이 어우러진 실내 공간은 마치 작은 온실처럼 느껴진다. 작은 테이블 위에 간단히 차려진 꽃과 디저트, 편안한 쿠션이 놓인 벤치까지, 누구라도 초대하고 싶은 브런치 파티 무드를 완성한다. 실내지만 자연 속에 머무는 듯한 편안함과 여유를 느낄 수 있는 공간 연출의 좋은 예.</p>
